@@ -1,3 +1,4 @@
+// everything needed to import
 import React from "react";
 import { Badge } from "@mui/material";
 import { FaSearch } from "react-icons/fa";
@@ -5,6 +6,8 @@ import styled from "styled-components";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Sales from "../Header";
 import Slider from "../Slider";
+
+// nav bar menu design for the top of the page
 const LeftNav = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
@@ -29,14 +32,16 @@ cursor:pointer;
 margin-right: 15px;
 flex:flex-end;
 `;
+// nav bar menu design for the top of the page ends
 
 export default function Home() {
   return (
     <div>
+      {/* the very top banner for sales and promotions */}
       <div className="promotions">
         <Sales />
       </div>
-
+      {/* wrapper that contains everything for the menu */}
       <div className="container">
         <LeftNav>
           <input placeHolder="Search"></input> <FaSearch color="gray" />
@@ -57,6 +62,7 @@ export default function Home() {
         </Right>
       </div>
       <div>
+        {/* the info coming in from the slider */}
         <Slider />
       </div>
     </div>
