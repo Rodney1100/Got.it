@@ -1,10 +1,10 @@
 import React from "react";
 import { Badge } from "@mui/material";
-import { FaSearch, FaCartArrowDown } from "react-icons/fa";
-import Nav from "../Nav";
+import { FaSearch } from "react-icons/fa";
 import styled from "styled-components";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Sales from "../Header";
+import Slider from "../Slider";
 const LeftNav = styled.div`
   border: 0.5px solid lightgray;
   display: flex;
@@ -27,13 +27,14 @@ const MenuItems = styled.div`
 font-size 15px;
 cursor:pointer;
 margin-right: 15px;
-flex:flex-end`;
+flex:flex-end;
+`;
 
 export default function Home() {
   return (
     <div>
       <div className="promotions">
-        <Sales/>
+        <Sales />
       </div>
 
       <div className="container">
@@ -54,6 +55,9 @@ export default function Home() {
             </Badge>
           </MenuItems>
         </Right>
+      </div>
+      <div>
+        <Slider />
       </div>
     </div>
   );

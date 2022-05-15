@@ -1,6 +1,6 @@
 .container {
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.675);
+  background-color: rgba(220, 220, 220, 0.452);
   padding: 10px 15px;
   display: flex;
   justify-content:space-between;
@@ -12,10 +12,17 @@ input {
   padding: 5px;
   border: none;
   outline: none;
+  border-radius: 50px;
+  background-color: rgba(220, 220, 220, 0.149);
 }
 
 .promotions{
   text-align: center;
-  background-color: lightgray;
+  background-color: #b9b9b9c6;
   font-size: 13px;
+
+}
+.letterSpacing{
+  letter-spacing: 2px;
+  font-weight: bold;
 }
