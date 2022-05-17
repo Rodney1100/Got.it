@@ -17,7 +17,7 @@ const Container = styled.div`
 const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: rgb(230, 230, 230);
+  background-color: rgb(230, 0522, 230);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -29,14 +29,15 @@ const Arrow = styled.div`
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto;
   cursor: pointer;
-  opacity: 0.35;
+  opacity: 0.15;
   z-index: 2;
 `;
 // wraps the image and the information that is next to it.
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
-  transform: translateX(-0vw);
+  transition: all 1.5s ease;
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 // slider style start
 const Slide = styled.div`
@@ -57,14 +58,15 @@ const ImgSlide = styled.div`
   flex: 1;
 `;
 const Title = styled.h1`
-  font-size: 70px;
+  font-size: 60px;
   letter-spacing: 2px;
 `;
 const Button = styled.button`
-  padding: 10px;
-  font-weight: bold;
-  border-radius: 15px;
-  cursor: pointer;
+border:none;
+padding:10px;
+background-color:lightgray;
+border-radius:5px;
+cursor:pointer;
 `;
 const Description = styled.p`
   margin: 50px 0px;
@@ -75,8 +77,15 @@ const Description = styled.p`
 // slider style end
 
 export default function Slider() {
-  // const [slideIndex, setSlideIndex] = useState;
-  const handleSlider = (direction) => {};
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const handleSlider = (direction) => {
+    if (direction == "left") {
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+    }
+  };
   return (
     <div>
       {/* everything on the page for the slider is called here */}
@@ -86,7 +95,7 @@ export default function Slider() {
           <ArrowBackIosNewIcon />
         </Arrow>
         {/* the wrapper from above */}
-        <Wrapper>
+        <Wrapper slideIndex={slideIndex}>
           {/* called from the array in data.js to display the images and info here*/}
           {slidersItems.map((item) => (
             <Slide bg="f5fafd">
@@ -96,13 +105,13 @@ export default function Slider() {
               <InfoSlide>
                 <Title>{item.title}</Title>
                 <Description>{item.description}</Description>
-                <Button>Buy Now</Button>
+                <Button>SHOP NOW</Button>
               </InfoSlide>
             </Slide>
           ))}
         </Wrapper>
 
-          {/* arrow keys to change the pictures */}
+        {/* arrow keys to change the pictures */}
         <Arrow direction="right" onClick={() => handleSlider("right")}>
           <ArrowForwardIosIcon />
         </Arrow>
