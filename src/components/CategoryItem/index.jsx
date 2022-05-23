@@ -24,7 +24,7 @@ const Info = styled.div`
   flex-direction: column;
 `;
 const Title = styled.h1`
-color: darkgreen;
+color: #343002;
 margin: 20px;
 font-family:bold;;
 font-size:70px;`;
@@ -39,10 +39,8 @@ cursor:pointer;
 export default function CategoryItem({ item }) {
   return (
     <Container>
-      {/* <Image src={item.img} alt= "img" /> */}
       <Image src={item.img} />
       <Info>
-        {/* <Title>{item.Title}</Title> */}
         <Title>{item.title}</Title>
         <Button>SHOP NOW</Button>
       </Info>

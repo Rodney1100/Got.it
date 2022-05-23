@@ -80,7 +80,7 @@ export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const handleSlider = (direction) => {
-    if (direction == "left") {
+    if (direction === "left") {
       setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
     } else {
       setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);

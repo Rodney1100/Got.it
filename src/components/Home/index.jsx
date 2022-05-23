@@ -6,8 +6,8 @@ import styled from "styled-components";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Sales from "../Header";
 import Slider from "../Slider";
-import Categories  from "../Categories";
-
+import Categories from "../Categories";
+import {Products} from "../Products";
 // nav bar menu design for the top of the page
 const LeftNav = styled.div`
   border: 0.5px solid lightgray;
@@ -68,6 +68,9 @@ export default function Home() {
       </div>
       <div>
         <Categories />
+      </div>
+      <div>
+        <Products />
       </div>
     </div>
   );
