@@ -22,19 +22,25 @@ const Info = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-`;
+  `;
 const Title = styled.h1`
-color: #343002;
-margin: 20px;
-font-family:bold;;
-font-size:70px;`;
+  color: #343002;
+  margin: 20px;
+  font-family: bold;
+  font-size: 70px;
+  `;
 const Button = styled.button`
-border:none;
-padding:10px;
-background-color:lightgray;
-border-radius:5px;
-cursor:pointer;
-
+  border: none;
+  padding: 10px;
+  transition: all 0.9s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: lightgray;
+  :hover {
+    background-color: white;
+    transform: scale(1.1);
+    border: 1px solid black;
+  }
 `;
 export default function CategoryItem({ item }) {
   return (

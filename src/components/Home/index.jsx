@@ -7,7 +7,9 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Sales from "../Header";
 import Slider from "../Slider";
 import Categories from "../Categories";
-import {Products} from "../Products";
+import { Products } from "../Products";
+import { NewsLetter } from "../NewsLetters";
+import { Footer } from "../Footer";
 // nav bar menu design for the top of the page
 const LeftNav = styled.div`
   border: 0.5px solid lightgray;
@@ -28,10 +30,10 @@ const Right = styled.div`
   display: flex;
 `;
 const MenuItems = styled.div`
-font-size 15px;
-cursor:pointer;
-margin-right: 15px;
-flex:flex-end;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 15px;
+  flex: flex-end;
 `;
 // nav bar menu design for the top of the page ends
 
@@ -45,7 +47,7 @@ export default function Home() {
       {/* wrapper that contains everything for the menu */}
       <div className="container">
         <LeftNav>
-          <input placeHolder="Search"></input> <FaSearch color="gray" />
+          <input className="input" placeHolder="Search"></input> <FaSearch color="gray" />
         </LeftNav>
 
         <Center>
@@ -62,16 +64,12 @@ export default function Home() {
           </MenuItems>
         </Right>
       </div>
-      <div>
-        {/* the info coming in from the slider */}
-        <Slider />
-      </div>
-      <div>
-        <Categories />
-      </div>
-      <div>
-        <Products />
-      </div>
+      {/* the info coming in from the slider */}
+      <Slider />
+      <Categories />
+      <Products />
+      <NewsLetter />
+      <Footer />
     </div>
   );
 }

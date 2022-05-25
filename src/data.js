@@ -23,8 +23,7 @@ export const slidersItems = [
   },
 ];
 
-
-export const categories  = [
+export const categories = [
   {
     id: 1,
     img: "https://i.ibb.co/52hV0fN/pexels-artem-podrez-6786611.jpg",
@@ -34,51 +33,49 @@ export const categories  = [
     id: 1,
     img: "https://i.ibb.co/KwtsVJ0/pexels-becerra-govea-photo-6065937.jpg",
     title: "Office",
-    
   },
   {
     id: 1,
     img: "https://i.ibb.co/9Tq8pFs/pexels-monstera-6311678.jpg",
     title: "Party",
-
   },
 ];
 
 export const bestSellers = [
   {
-    id:1,
-    img:"https://i.ibb.co/BgYJsrf/Screenshot-2022-05-22-221810.jpg",
+    id: 4,
+    img: "https://i.ibb.co/VVKpS3b/Screenshot-2022-05-22-221024.jpg",
   },
   {
-    id:2,
-    img:"https://i.ibb.co/DtjFLvD/Screenshot-2022-05-22-221612.jpg",
+    id: 5,
+    img: "https://i.ibb.co/f0ZSQ99/Screenshot-2022-05-22-221152.jpg",
   },
   {
-    id:3,
-    img:"https://i.ibb.co/ykL9kqY/Screenshot-2022-05-22-222931.jpg",
+    id: 6,
+    img: "https://i.ibb.co/db9C8gB/Screenshot-2022-05-22-221048.jpg",
   },
   {
-    id:4,
-    img:"https://i.ibb.co/VVKpS3b/Screenshot-2022-05-22-221024.jpg",
+    id: 7,
+    img: "https://i.ibb.co/cNpLDGH/Screenshot-2022-05-22-220819.jpg",
   },
   {
-    id:5,
-    img:"https://i.ibb.co/f0ZSQ99/Screenshot-2022-05-22-221152.jpg",
+    id: 9,
+    img: "https://i.ibb.co/bmsrZPw/Screenshot-2022-05-22-220940.jpg",
   },
   {
-    id:6,
-    img:"https://i.ibb.co/db9C8gB/Screenshot-2022-05-22-221048.jpg",
+    id: 8,
+    img: "https://i.ibb.co/yPvcPMj/Screenshot-2022-05-22-222712.jpg",
   },
   {
-    id:7,
-    img:"https://i.ibb.co/cNpLDGH/Screenshot-2022-05-22-220819.jpg",
+    id: 1,
+    img: "https://i.ibb.co/BgYJsrf/Screenshot-2022-05-22-221810.jpg",
   },
   {
-    id:9,
-    img:"https://i.ibb.co/bmsrZPw/Screenshot-2022-05-22-220940.jpg",
+    id: 2,
+    img: "https://i.ibb.co/DtjFLvD/Screenshot-2022-05-22-221612.jpg",
   },
   {
-    id:8,
-    img:"https://i.ibb.co/yPvcPMj/Screenshot-2022-05-22-222712.jpg",
+    id: 3,
+    img: "https://i.ibb.co/ykL9kqY/Screenshot-2022-05-22-222931.jpg",
   },
-]
+];

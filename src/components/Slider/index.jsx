@@ -67,6 +67,13 @@ padding:10px;
 background-color:lightgray;
 border-radius:5px;
 cursor:pointer;
+:hover{
+    background-color: white;
+    transform: scale(1.1);
+    border: 1px solid black;
+  }
+  transition: all 0.5s ease;
+
 `;
 const Description = styled.p`
   margin: 50px 0px;
