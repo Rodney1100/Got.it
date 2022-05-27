@@ -3,7 +3,7 @@
   background-color: rgba(220, 220, 220, 0.452);
   padding: 10px 15px;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,17 +16,20 @@ input {
   background-color: rgba(220, 220, 220, 0.149);
 }
 
-.promotions{
+.promotions {
   text-align: center;
   background-color: #b9b9b9c6;
   font-size: 13px;
-
 }
-.letterSpacing{
+.letterSpacing {
   letter-spacing: 2px;
   font-weight: bold;
 }
 
-.imgSliders{
+.imgSliders {
   width: 100%;
+}
+
+.emailContact {
+align-items: center;
 }
