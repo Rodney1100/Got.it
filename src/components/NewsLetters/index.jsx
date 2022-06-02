@@ -23,7 +23,7 @@ const Description = styled.div`
 const Button = styled.button`
   flex: 1;
   font-size: 30px;
-  background-color: #91eee9;
+  background-color: #c6ae8f;
   border: none;
   cursor: pointer;
 `;
@@ -37,13 +37,13 @@ const InputContainer = styled.div`
   width: 40%;
   height: 35px;
   font-size: 20px;
-  background-color: #4798b313;
+  background-color: #e1e1e18b;
   display: flex;
   justify-content: space-between;
   padding: 4px;
 `;
 
-export const NewsLetter = () => {
+  export default function NewsLetters() {
   return (
     <Container>
       <Title>What's Next?</Title>
@@ -53,7 +53,7 @@ export const NewsLetter = () => {
       <InputContainer>
         <Input placeholder="Email Here" />
         <Button>
-          <FaTelegramPlane color="gray" />
+          <FaTelegramPlane color="#ffffff" />
         </Button>
       </InputContainer>
     </Container>

@@ -1,10 +1,7 @@
 import React from "react";
-// import MdEmail from "react-icons/md";
 import MarkunreadIcon from '@mui/icons-material/Markunread';
-import {GrMail}  from "react-icons/gr";
 import styled from "styled-components";
 import {
-  FaMailBulk,
   FaFacebook,
   FaGithub,
   FaLinkedinIn,
@@ -17,7 +14,7 @@ import {
 
 const Container = styled.div`
   display: flex;
-  background-color: #c19c6b49;
+  background-color: #5e350048;
 `;
 
 const Left = styled.div`
@@ -83,8 +80,6 @@ const ContactList = styled.div`
   font-size: medium;
 `;
 const ContactList1 = styled.div`
-  /* margin-bottom: 10px; */
-  /* display: inline-block; */
   font-size: medium;
   margin-bottom: 20px;
   display: flex;
@@ -153,3 +148,4 @@ export const Footer = () => {
     </Container>
   );
 };
+export default Footer;
