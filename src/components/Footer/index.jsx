@@ -14,7 +14,7 @@ import {
 
 const Container = styled.div`
   display: flex;
-  background-color: #5e350048;
+  background-color: #c4c4c4;
 `;
 
 const Left = styled.div`

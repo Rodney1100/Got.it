@@ -10,13 +10,18 @@ const Wrapper = styled.div`
   display: flex;
   background-color: #e9e9e92b;
 `;
-
+const Title = styled.h1`
+  font-weight: 300;
+  margin-top: 0px;
+  padding-top: 0px;
+`;
 const Login = () => {
   return (
     <div>
       <Nav />
-      <Wrapper></Wrapper>
-      {/* <NewsLetter /> */}
+      <Wrapper>
+        <Title> SIGN IN</Title>
+      </Wrapper>
       <Footer />
     </div>
   );
