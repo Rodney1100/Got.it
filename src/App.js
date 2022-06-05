@@ -1,13 +1,17 @@
 import "./App.css";
-import Home from "./components/Home";
+import Login from "./components/Pages/Login";
+// import Home from "./components/Home";
 import Product from "./components/Pages/Product";
-import { ProductList } from "./components/Pages/ProductList";
+import Register from "./components/Pages/Register";
+// import { ProductList } from "./components/Pages/ProductList";
 function App() {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <ProductList /> */}
-      <Product/>
+      {/* <Home />
+      <ProductList /> */}
+      {/* <Product/> */}
+      <Register/>
+      <Login/>
     </div>
   );
 }

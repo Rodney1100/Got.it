@@ -1,14 +1,14 @@
 import React from "react";
 import Footer from "../Footer";
 import Nav from "../Nav";
-import { Products } from "../Products";
 import NewsLetter from "../NewsLetters";
 import styled from "styled-components";
-
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
+import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  background-color: #f5f5f5ac;
+  background-color: #e9e9e92b;
 `;
 const ImageContainer = styled.div`
   flex: 1;
@@ -24,33 +24,76 @@ const InfoContainer = styled.div`
   flex: 1;
 `;
 const Title = styled.h1`
-  font-weight: 400;
+  font-weight: 300;
+  margin-top: 0px;
+  padding-top: 0px;
 `;
 const FilterContainer = styled.div`
   display: flex;
+  margin: 30px 0px;
   justify-content: space-between;
   width: 50%;
 `;
 const FilterTitle = styled.span`
-  font-weight: 400;
+  font-weight: 350;
+  font-size: 20px;
 `;
-const Filter = styled.div``;
+const Filter = styled.div`
+  display: flex;
+  align-items: center;
+`;
 const FilterColor = styled.div`
-  margin-left: 20px;
+  margin-left: 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: ${(props) => props.color};
+  cursor: pointer;
 `;
 
-const FilterSize = styled.select`  margin-left: 20px;
-padding: 5px;`;
-
-const FilterSizeOp = styled.option`
+const FilterSize = styled.select`
+  margin-left: 10px;
+  padding: 5px;
+  cursor: pointer;
 `;
+
+const FilterSizeOp = styled.option``;
 
 const Price = styled.h2`
-  font-weight: 400;
+  font-weight: 300;
 `;
 const Description = styled.p`
-  margin: 20px 0px;
 `;
+const AddContainer = styled.div`
+  display: flex;
+  align-items:center;
+  width: 50%;
+justify-content: space-between;
+`;
+const AmountCount = styled.div`
+align-items: center;
+display: flex;
+font-weight: 500;
+`;
+const Amount = styled.span`
+border-radius: 5px;
+border: 3px solid darkgray;
+padding: 0px 10px;
+margin:10px;
+`;
+const AddButton = styled.button`
+border: 3px solid darkgray;
+padding: 10px;
+background-color: white;
+border-radius: 5px;
+cursor: pointer;
+font-weight: 600;
+
+&:hover{
+  background-color: lightgray;
+}
+`;
+
 
 const Product = () => {
   return (
@@ -62,7 +105,7 @@ const Product = () => {
         </ImageContainer>
 
         <InfoContainer>
-          <Title>Title</Title>
+          <Title>Plain T</Title>
           <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
             molestiae aperiam corporis consectetur minima vitae fuga laborum
@@ -73,14 +116,16 @@ const Product = () => {
             <Filter>
               <FilterTitle>Color</FilterTitle>
               <FilterColor color="Black" />
-              <FilterColor color="Green" />
-              <FilterColor color="White" />
+              <FilterColor color="beige" />
+              <FilterColor color="Gray" />
             </Filter>
 
             <Filter>
               <FilterTitle>Size</FilterTitle>
               <FilterSize>
-                <FilterSizeOp disabled selected >Size</FilterSizeOp>
+                <FilterSizeOp disabled selected>
+                  Size
+                </FilterSizeOp>
                 <FilterSizeOp>S</FilterSizeOp>
                 <FilterSizeOp>M</FilterSizeOp>
                 <FilterSizeOp>L</FilterSizeOp>
@@ -88,6 +133,14 @@ const Product = () => {
               </FilterSize>
             </Filter>
           </FilterContainer>
+          <AddContainer>
+            <AmountCount>
+              <RemoveOutlinedIcon cursor="pointer" />
+              <Amount>3</Amount>
+              <AddOutlinedIcon cursor="pointer"/>
+            </AmountCount>
+            <AddButton>Add To Cart</AddButton>
+          </AddContainer>
         </InfoContainer>
       </Wrapper>
       <NewsLetter />
