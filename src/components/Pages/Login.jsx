@@ -5,25 +5,88 @@ import NewsLetter from "../NewsLetters";
 import styled from "styled-components";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(49, 0, 0, 0.80)),
+    url("https://i.ibb.co/JHBCr9q/pexels-11075319.jpg");
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+`;
+
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
-  background-color: #e9e9e92b;
+  border-radius: 5px;
+  width: 35%;
+  background-color: rgba(233, 233, 233, 0.005);
+  border: solid black 3px;
+  justify-content: space-around;
 `;
-const Title = styled.h1`
+const Wrapper1 = styled.div``;
+
+const Title = styled.h2`
   font-weight: 300;
   margin-top: 0px;
   padding-top: 0px;
+  color: #000000;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right:84.074px ;
 `;
+const Form = styled.form`
+  color: #000000;
+`;
+const Input = styled.input`
+  font-weight: bolder;
+  background-color: #ffffff84;
+  border-radius: 5px;
+  padding: 10px 0px;
+  margin: 5px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+`;
+ 
+const Button = styled.button`
+  opacity: 60%;
+  width: 100%;
+  padding: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  &:hover {
+    opacity: 100%;
+  }
+`;
+const Logo = styled.h1`
+  margin-bottom: 50px;
+  margin-top: 0px;
+`;
+
 const Login = () => {
   return (
-    <div>
-      <Nav />
+    <Container>
       <Wrapper>
-        <Title> SIGN IN</Title>
+        <Wrapper1>
+          <Logo className="logo">GOT.It</Logo>
+          <Title> SIGN IN </Title>
+        </Wrapper1>
+        <Form>
+          <Input placeholder="Username" />
+          <Input placeholder="Password" />
+          <Button>SIGN IN</Button>
+          <Button>FORGOT PASSWORD</Button>
+          <Button>CREATE ACCOUNT</Button>
+          <Button>KEEP BROWSING</Button>
+        </Form>
       </Wrapper>
-      <Footer />
-    </div>
+    </Container>
   );
 };
 
