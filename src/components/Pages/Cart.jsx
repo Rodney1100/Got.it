@@ -2,6 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import Nav from "../Nav";
 import Footer from "../Footer";
+import AddOutlined from "@mui/icons-material/AddOutlined";
+import RemoveOutlined from "@mui/icons-material/RemoveOutlined";
 const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 20px;
@@ -14,7 +16,7 @@ const Top = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 `;
 const TopButtom = styled.button`
   padding: 10px;
@@ -64,13 +66,29 @@ const ProductColor = styled.div`
   border-radius: 50%;
 `;
 const ProductSize = styled.span``;
+const ProductAmount = styled.span`
+  border-radius: 5px;
+  border: 3px solid darkgray;
+  padding: 0px 10px; ;
+`;
+const AmountDetail = styled.span`
+  align-items: center;
+  display: flex;
+  font-weight: 500;
+`;
+
 const Price = styled.div`
   flex: 1;
+  padding: 20px;
+  justify-content: space-between;
 `;
 const Image = styled.img`
   width: 250px;
 `;
-
+const ProductPrice = styled.span`
+  font-size: 25px;
+  font-weight: 300;
+`;
 const Cart = () => {
   return (
     <Container>
@@ -104,7 +122,14 @@ const Cart = () => {
                   </ProductSize>
                 </Details>
               </ProductDetails>
-              <Price>pro Price</Price>
+              <Price>
+                <AmountDetail>
+                  <RemoveOutlined />
+                  <ProductAmount>2</ProductAmount>
+                  <AddOutlined />
+                  <ProductPrice>$ 120</ProductPrice>
+                </AmountDetail>
+              </Price>
             </Product>
           </Info>
           <Summary>Summary</Summary>
