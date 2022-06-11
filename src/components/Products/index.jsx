@@ -4,11 +4,11 @@ import { bestSellers } from "../../data";
 import { Bestselling } from "../BestSelling";
 
 const Container = styled.div`
-display :flex;
-flex-wrap: wrap;
-padding:20px
-
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
 `;
+
 export const Products = () => {
   return (
     <Container>

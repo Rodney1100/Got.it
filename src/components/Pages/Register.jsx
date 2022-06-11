@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(49, 0, 0, 0.80)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(0, 0, 0, 0.5)),
     url("https://i.ibb.co/ScsRWCw/pexels-wesley-carvalho-3622614.jpg");
   background-size: cover;
   align-items: center;
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
   display: flex;
   border-radius: 5px;
   width: 35%;
-  background-color: rgba(233, 233, 233, 0.005);
+  background-color: rgba(233, 233, 233, .09);
   border: solid black 3px;
   justify-content: space-around;
 `;

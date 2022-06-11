@@ -43,6 +43,9 @@ const SocialMedia = styled.div`
 const ListItem = styled.li`
   width: 50%;
   margin-bottom: 10px;
+  cursor: pointer;
+text-decoration: underline;
+/* border-bottom: black solid 1px; */
 `;
 
 const List = styled.ul`

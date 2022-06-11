@@ -9,7 +9,7 @@ import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(49, 0, 0, 0.80)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(0, 0, 0, 0.6)),
     url("https://i.ibb.co/JHBCr9q/pexels-11075319.jpg");
   background-size: cover;
   align-items: center;
@@ -22,11 +22,12 @@ const Wrapper = styled.div`
   display: flex;
   border-radius: 5px;
   width: 35%;
-  background-color: rgba(233, 233, 233, 0.005);
+  background-color: rgba(233, 233, 233, 0.09);
   border: solid black 3px;
   justify-content: space-around;
 `;
 const Wrapper1 = styled.div``;
+
 
 const Title = styled.h2`
   font-weight: 300;
