@@ -1,10 +1,8 @@
 import React from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Sales from "../Header";
-import Slider from "../Slider";
 import { Badge } from "@mui/material";
 import { FaSearch } from "react-icons/fa";
-import Categories from "../Categories";
 import styled from "styled-components";
 
 const LeftNav = styled.div`

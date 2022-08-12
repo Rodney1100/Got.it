@@ -24,9 +24,12 @@ const Info = styled.div`
   flex-direction: column;
   `;
 const Title = styled.h1`
-  color: #343002;
+background-color: rgba(0, 0, 0, 0.57);
+  color: #ffffff;
   margin: 20px;
+  border-radius: 5px;
   font-family: bold;
+  border: 5px solid black;
   font-size: 70px;
   `;
 const Button = styled.button`
@@ -35,7 +38,8 @@ const Button = styled.button`
   transition: all 0.9s ease;
   border-radius: 5px;
   cursor: pointer;
-  background-color: lightgray;
+  background-color: #e0e0e0;
+  border: 5px solid black;
   :hover {
     background-color: white;
     transform: scale(1.1);
@@ -53,5 +57,3 @@ export default function CategoryItem({ item }) {
     </Container>
   );
 }
-
-// <Description>{item.description}</Description>

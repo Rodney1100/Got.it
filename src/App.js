@@ -8,11 +8,11 @@ import Cart from "./components/Pages/Cart";
 function App() {
   return (
     <div>
-      {/* <Home /> */}
-      {/* <ProductList /> */}
-      {/* <Product/> */}
-      {/* <Register/> */}
-      {/* <Login/> */}
+      {/* <Home />
+      <ProductList />
+      <Product/>
+      <Register/>
+      <Login/> */}
       <Cart/>
     </div>
   );

@@ -9,8 +9,8 @@ import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(0, 0, 0, 0.6)),
-    url("https://i.ibb.co/JHBCr9q/pexels-11075319.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.80), rgba(0, 0, 0, 1)),
+    url("https://i.ibb.co/Nnsy4N3/dom-hill-nim-El-Tc-TNy-Y-unsplash-min.jpg");
   background-size: cover;
   align-items: center;
   justify-content: center;

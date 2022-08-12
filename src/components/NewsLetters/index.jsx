@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { FaTelegramPlane } from "react-icons/fa";
 const Container = styled.div`
-  height: 60vh;
+  height: 30vh;
   color: #515151;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background-color: #ffeeee42;
 `;
 
 const Title = styled.div`
@@ -23,13 +24,15 @@ const Description = styled.div`
 const Button = styled.button`
   flex: 1;
   font-size: 30px;
-  background-color: #c6ae8f;
+  background-color: #000000fc;
   border: none;
   cursor: pointer;
 `;
 const Input = styled.input`
-  flex: 8;
+  flex: 6;
   padding-left: 20px;
+  border-radius: 0px;
+  background-color: #ffffff;
 `;
 
 const InputContainer = styled.div`
@@ -37,7 +40,7 @@ const InputContainer = styled.div`
   width: 40%;
   height: 35px;
   font-size: 20px;
-  background-color: #e1e1e18b;
+  background-color: #7a7a7a2b;
   display: flex;
   justify-content: space-between;
   padding: 4px;

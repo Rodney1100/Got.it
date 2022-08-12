@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 // slider style start
 const Slide = styled.div`
   width: 100vw;
-  height: 100vw;
+  height: 90vw;
   display: flex;
   background-color: #${(props) => props.bg};
 `;
@@ -51,29 +51,31 @@ const InfoSlide = styled.div`
   flex: 1;
 `;
 const Image = styled.img`
-  height: 50%;
+  object-fit: cover;
+  width: 100%;
 `;
 const ImgSlide = styled.div`
   height: 100vw;
   flex: 1;
+  width: 100%;
 `;
 const Title = styled.h1`
   font-size: 60px;
   letter-spacing: 2px;
 `;
 const Button = styled.button`
-border:none;
-padding:10px;
-background-color:lightgray;
-border-radius:5px;
-cursor:pointer;
-:hover{
+  border: none;
+  padding: 10px;
+  transition: all 0.9s ease;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #b4b4b4;
+  border: 5px solid black;
+  :hover {
     background-color: white;
     transform: scale(1.1);
     border: 1px solid black;
   }
-  transition: all 0.5s ease;
-
 `;
 const Description = styled.p`
   margin: 50px 0px;

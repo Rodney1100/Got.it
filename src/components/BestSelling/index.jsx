@@ -13,7 +13,7 @@ const Info = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: #eaeaea87;
+  background-color: #eaeaea86;
   transition: all 01.5s ease;
 `;
 const Container = styled.div`
@@ -26,16 +26,19 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  background-color: #f5fbfd50;
   &:hover ${Info} {
     opacity: 1;
   }
 `;
+const Container1 = styled.div`
+margin: auto;
+padding: 0px 40px;
+`;
 
 
 const Image = styled.img`
-  height: 85%;
-  border-radius: 10%;
+  height: 100%;
+  border-radius: 15%;
 `;
 
 const Icon = styled.div`
@@ -48,7 +51,7 @@ const Icon = styled.div`
   position: relative;
   border-radius: 50%;
   font-weight: bolder;
-  background-color: #929292;
+  background-color: #ff0000ba;
   cursor: pointer;
   :hover{
     background-color: white;
@@ -58,6 +61,7 @@ const Icon = styled.div`
 
 export const Bestselling = ({ item }) => {
   return (
+    <Container1>
     <Container>
       <Image src={item.img} key={item.id} />
       <Info>
@@ -72,5 +76,6 @@ export const Bestselling = ({ item }) => {
         </Icon>
       </Info>
     </Container>
+    </Container1>
   );
 };

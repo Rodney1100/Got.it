@@ -17,12 +17,21 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 100px;
+  padding: 30px;
 `;
 const TopButtom = styled.button`
-  padding: 10px;
-  font-weight: 500;
-  cursor: pointer;
+  border: 1px solid darkgray;
+  padding: 20px;
+  background-color: #252424a6;
   border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffffff;
+  font-weight: bolder;
+  &:hover {
+    background-color: #c3c3c3;
+    color: #000000;
+  }
 `;
 const Bottom = styled.div`
   display: flex;
@@ -31,6 +40,11 @@ const Bottom = styled.div`
 const Info = styled.div`
   flex: 3;
   /* background-color: rgba(255, 255, 255, 0.1); */
+`;
+const Hr = styled.hr`
+  background-color: #eee;
+  border: none;
+  height: 5px;
 `;
 const Summary = styled.div`
   /* background-color: rgba(0, 255, 255, 0.1); */
@@ -68,19 +82,23 @@ const ProductColor = styled.div`
 const ProductSize = styled.span``;
 const ProductAmount = styled.span`
   border-radius: 5px;
-  border: 3px solid darkgray;
-  padding: 0px 10px; ;
+  border: 1px solid darkgray;
+  padding: 5px 10px;
+  font-size: large;
 `;
 const AmountDetail = styled.span`
-  align-items: center;
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
   font-weight: 500;
 `;
 
 const Price = styled.div`
   flex: 1;
-  padding: 20px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 const Image = styled.img`
   width: 250px;
@@ -89,6 +107,13 @@ const ProductPrice = styled.span`
   font-size: 25px;
   font-weight: 300;
 `;
+const SummaryTitle = styled.H1`
+  font-weight: bold;
+  margin-bottom: 30px;
+`;
+const SummaryBody = styled.div``;
+const SummaryItemPrice = styled.div``;
+const SummaryItemText = styled.div``;
 const Cart = () => {
   return (
     <Container>
@@ -108,7 +133,42 @@ const Cart = () => {
           <Info>
             <Product>
               <ProductDetails>
-                <Image src="https://i.ibb.co/p1Q1mWs/512b4b870390fac58da5206e88d228d6.png" />
+                <Image src="https://i.ibb.co/5Bv4Yfs/Screenshot-2022-05-22-220819-removebg-preview-min.png" />
+                <Details>
+                  <ProductName>
+                    <b>ITEM: </b>Robotic Graphic T
+                  </ProductName>
+                  <ProductID>
+                    <b>ID:</b>3388
+                  </ProductID>
+                  <ProductColor color="#232020" />
+                  <ProductSize>
+                    <b>SIZE:</b> L
+                  </ProductSize>
+                </Details>
+              </ProductDetails>
+              <Price>
+                <AmountDetail>
+                  <RemoveOutlined />
+                  <ProductAmount>2</ProductAmount>
+                  <AddOutlined />
+                </AmountDetail>
+                <ProductPrice>$ 120.00</ProductPrice>
+              </Price>
+              <Summary>
+                <SummaryTitle>Running Shoes</SummaryTitle>
+                <SummaryBody>
+                  <SummaryItemText>SubTotal</SummaryItemText>
+                  <SummaryItemPrice>$ 240.00</SummaryItemPrice>
+                </SummaryBody>
+              </Summary>
+            </Product>
+
+            <Hr />
+
+            <Product>
+              <ProductDetails>
+                <Image src="https://i.ibb.co/TMNBJQB/512b4b870390fac58da5206e88d228d6-min.png" />
                 <Details>
                   <ProductName>
                     <b>ITEM: </b>Nike Running Shoes
@@ -127,15 +187,21 @@ const Cart = () => {
                   <RemoveOutlined />
                   <ProductAmount>2</ProductAmount>
                   <AddOutlined />
-                  <ProductPrice>$ 120</ProductPrice>
                 </AmountDetail>
+                <ProductPrice>$ 120.00</ProductPrice>
               </Price>
+              <Summary>
+                <SummaryTitle>ORDER SUMMARY</SummaryTitle>
+                <SummaryBody>
+                  <SummaryItemText>SubTotal</SummaryItemText>
+                  <SummaryItemPrice>$ 240.00</SummaryItemPrice>
+                </SummaryBody>
+              </Summary>
             </Product>
           </Info>
-          <Summary>Summary</Summary>
         </Bottom>
       </Wrapper>
-      <Footer></Footer>
+      {/* <Footer/> */}
     </Container>
   );
 };

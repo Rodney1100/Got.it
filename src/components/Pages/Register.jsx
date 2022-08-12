@@ -5,8 +5,8 @@ import styled from "styled-components";
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.70), rgba(0, 0, 0, 0.5)),
-    url("https://i.ibb.co/ScsRWCw/pexels-wesley-carvalho-3622614.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.80), rgba(0, 0, 0, 1)),
+    url("https://i.ibb.co/jvXRFhJ/pexels-teddy-joseph-2955376.jpg");
   background-size: cover;
   align-items: center;
   justify-content: center;

@@ -8,6 +8,7 @@ import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+  height:60vw;
   background-color: #e9e9e92b;
 `;
 const ImageContainer = styled.div`
@@ -77,12 +78,12 @@ font-weight: 500;
 `;
 const Amount = styled.span`
 border-radius: 5px;
-border: 3px solid darkgray;
+border: 1.3px solid darkgray;
 padding: 0px 10px;
 margin:10px;
 `;
 const AddButton = styled.button`
-border: 3px solid darkgray;
+border: 1.3px solid darkgray;
 padding: 10px;
 background-color: white;
 border-radius: 5px;
@@ -101,7 +102,7 @@ const Product = () => {
       <Nav />
       <Wrapper>
         <ImageContainer>
-          <Image src="https://i.ibb.co/52hV0fN/pexels-artem-podrez-6786611.jpg" />
+          <Image src="https://i.ibb.co/TMNBJQB/512b4b870390fac58da5206e88d228d6-min.png" />
         </ImageContainer>
 
         <InfoContainer>
@@ -116,7 +117,7 @@ const Product = () => {
             <Filter>
               <FilterTitle>Color</FilterTitle>
               <FilterColor color="Black" />
-              <FilterColor color="beige" />
+              <FilterColor color="rgb(78, 247, 0)" />
               <FilterColor color="Gray" />
             </Filter>
 
@@ -143,7 +144,7 @@ const Product = () => {
           </AddContainer>
         </InfoContainer>
       </Wrapper>
-      <NewsLetter />
+      {/* <NewsLetter /> */}
       <Footer />
     </div>
   );
